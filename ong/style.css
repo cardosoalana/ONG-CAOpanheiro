@@ -1,0 +1,155 @@
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit; 
+    text-decoration-color: #FFF;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: white;
+}
+
+small {
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+footer {
+    background: #187498;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+.div-header {
+    background: #EB5353;
+}
+
+#list-topics :hover {
+    background: #A1E3D8;
+}
+
+.curved-div {
+    background: #EB5353;
+    color: #FFF;
+    text-align: center;
+}
+
+.curved-div h1 {
+    font-size: 6rem;
+}
+
+.curved-div p {
+    font-size: 1rem;
+}
+
+.curved-div svg {
+    display: block;
+}
+
+.profileImg {
+    width: 20%;
+    margin: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.div-title {
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.color-background-yellow {
+    background: #F9D923;
+    margin: 0%;
+}
+
+.color-background-bluegreen {
+    background: #36AE7C;
+    margin: 0%;
+}
+
+.text-white {
+    color: white;
+}
+.color-background-yellow  p {
+    color: black;
+}
+  
+.button {
+    width: auto;
+    padding: 2%;
+    color: black;
+    background: white;
+    border: 2px solid #187498 ;
+    border-radius: 10px;
+    display:block;
+    position:relative;
+    text-align: center;
+}
+
+.button:hover {
+    background: #187498;
+    color: white;
+}
+
+.button1 {
+    margin-top: 3%;
+}
+
+.banner1-ong {
+    width: 250px;
+    height: 250px;
+    border-radius: 25%;
+    margin-top: 3%;
+}
+
+.banner2-ong {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.carousel-div {
+    width: auto;
+    height: auto;
+}
+
+.small-button {
+    font-size: smaller;
+}
+
+.carousel-adote {
+    height: 50%;
+    width: 50%;
+}
+
+.button-size {
+    height: 100px;
+}
+
+.img-size {
+    height: 30px;
+    width: 30px;
+    margin: 2%;
+}

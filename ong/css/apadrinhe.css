@@ -1,0 +1,34 @@
+
+.banner-div {
+    width: 100%;
+    margin-top: 0;
+}
+
+.banner-div img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 80%;
+    border-radius: 15px;
+}
+
+.row-div {
+    margin: auto;
+}
+
+.row-div p {
+    padding: 2%;
+}
+
+.models-area {
+    background: white;
+}
+
+.final-step, .success-step-div {
+    margin: 5%;
+}
+
+.line {
+    margin: 1%;
+}

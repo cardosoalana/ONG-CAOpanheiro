@@ -1,0 +1,203 @@
+
+.button{
+    display: none;
+}
+
+.title {
+    font-size: x-large;
+    text-align: center;
+    margin: 3%;
+}
+
+.button-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10%;
+}
+
+.button-item img {
+    height: 50%;
+    width: 50%;
+    border-radius: 25px;
+}
+
+.button-item-name {
+    border: 2px solid #36AE7C ;
+    border-radius: 15px;
+}
+
+.button-item-name:hover {
+    border: 15px;
+    background: #36AE7C;
+    color: white;
+}
+
+.buttonWindowArea {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(128, 128, 128, 0.527);
+    display: none;
+    transition: all ease 0.5s;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.buttonWindowBody {
+    width: 900px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px gray;
+    display: flex;
+    margin: 20px 0;
+}
+
+.buttonBig {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonBig img {
+    height: 400px;
+    width: auto;
+}
+
+.buttonInfo {
+    flex: 1;
+    padding-bottom: 50px;
+}
+
+.buttonInfo h1 {
+    margin-top: 50px;
+}
+
+.buttonInfo .modelsInfo-desc {
+    font-size: 15px;
+    color: grey;
+    margin-top: 10px;
+}
+
+.buttonInfo-addButton {
+    margin-top: 30px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background: palevioletred;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 30px;
+    height: 20%;
+}
+
+.buttonInfo-cancelButton {
+    display: inline-block;
+    cursor: pointer;
+    height: 20%;
+    padding: 10px 30px;
+    border: 2px solid #36AE7C;
+    border-radius: 10px;
+    transition: all ease 2s;
+}
+
+.buttonInfo-cancelButton:hover {
+    background: #36AE7C;
+    color: white;
+}
+
+.buttonInfo-cancelMobileButton {
+    display: none;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 30px;
+}
+
+.title-modal {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.form-div {
+    margin-left: 4%;
+    margin-left: 4%;
+}
+
+.button-div {
+    margin: 5%;
+}
+
+.second-step-div, .final-div {
+    display: none;
+}
+
+form input {
+    margin: 1%;
+    display: block;
+}
+
+footer {
+    margin: 0;
+    padding: 3%;
+    background: #36AE7C;
+}
+
+@media (max-width: 840px) {
+    body {
+        flex-direction: column;
+    } 
+
+    .button-area {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .buttonWindowArea {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .buttonWindowBody {
+        width: 100vw;
+        display: block;
+        padding: 20px;
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0;
+        margin: 3%;
+    }
+
+    .buttonBig {
+        width: 75%;
+        height: auto;
+    }
+
+    .buttonInfo h1 {
+        margin-top: 20px;
+    }
+
+    .buttonInfo-addButton {
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .buttonInfo-cancelButton {
+        display: flex;
+        justify-content: center;
+        border: 2px solid #36AE7C;
+        border-radius: 15px;
+        transition: all ease 2s;
+    }
+
+    .buttonInfo-cancelButton:hover {
+        background: #36AE7C;
+        color: white;
+    }
+}

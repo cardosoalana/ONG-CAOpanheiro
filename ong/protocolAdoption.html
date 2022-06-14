@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CÃOpanheiro</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="./css/protocolAdoption.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="./css/rodape.css" />        
+        <link rel="icon" type="image/x-icon" href="img.png">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+    <body>
+        <main>
+            <div class="instructions-div container">
+                <div class="first-step-div">
+                    <img  class="d-flex justify-content-center" src="./images/banner-gif.gif"/>
+                    <button class="button-next ml-auto p-2  button1">Próximo</button>
+                </div>
+               
+                <div class="second-step-div container">
+                    <p class="title">Falta pouco para conhecer o amor da sua vida!</p>
+
+                    <form method="post" class="formUser" id="formUser" name="formUser">
+                        <div class="line">
+                            <label for="name">Nome</label>
+                            <input class="form-control" id="name" name="name" placeholder="Nome" type="text" required>
+                            <small id="nameAlert" class="form-text text-muted, d-none">Campo obrigatório.</small>
+                        </div>
+
+                        <div class="line">
+                            <label for="cpf">Cpf</label>
+                            <input class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" type="text" autocomplete="off" maxlength="14" onkeyup="maskCpf(cpf)" required>
+                            <small id="cpfAlert" class="form-text text-muted, d-none">Campo obrigatório.</small>
+                        </div>
+
+                        <div class="line">
+                            <label for="email">Email</label>
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                            <small id="emailAlert" class="form-text text-muted, d-none">Campo obrigatório.</small>
+                            <small id="invalidEmailAlert" class="form-text text-muted, d-none">Email inválido, por favor insira um válido.</small>
+                        </div>
+                    </form>
+
+                    <button style="margin-top: 3%;" class="button-next ml-auto p-2 button2" type="submit" onclick="validateForm(formUser)">Próximo</button>
+                </div>
+
+                <div class="final-step-div">
+                    <img class="final-img rounded mx-auto d-block" src="./images/protocol.gif"/>
+                    <p class="title">PARABÉNS!!!</p>
+                    <p class="subtitle">Para finalizar sua adoção, vá até o local e o horário indicados abaixo e apresente o número do protocolo .</p>
+                    <div class="d-flex justify-content-center">
+                        <div class="models-protocol-area">
+                        </div>
+                    </div>
+
+                    <button style="margin-top: 3%;" class="button-next ml-auto p-2" type="submit"><a href="Index.html">Voltar</a></button>
+                </div>
+            </div>    
+
+        </main> 
+
+
+        <div class="modelsWindowAreaAdoption">
+            <div class="modelsWindowBodyAdoption">
+                <div class="window1">
+                    <p class="windowAdoptionProtocol"></p>
+                    <p class="windowAdressAdoption"></p>
+                    <p class="windowTimeAdoption"></p>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="./js/modelsProtocolAdoption.js"></script>
+        <script type="text/javascript" src="./js/scriptProtocolAdoption.js"></script>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+footer p {
+    color: white;
+    text-align: center;
+}
+
+.a {
+    padding: 5%;
+}
+
+.img-size {
+    margin: 2%;
+    height: 30px;
+    width: 30px;
+}
